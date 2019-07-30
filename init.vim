@@ -25,6 +25,8 @@ set smarttab
 set expandtab
 set smartindent
 set mouse=a
+set backupcopy=yes
+set nowritebackup
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
