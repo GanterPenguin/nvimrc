@@ -27,6 +27,7 @@ set smartindent
 set mouse=a
 set backupcopy=yes
 set nowritebackup
+set termguicolors
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
