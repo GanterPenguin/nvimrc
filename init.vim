@@ -33,6 +33,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -79,3 +80,11 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 "     \ "Unknown"   : "?"
 "     \ }
 " /nerdtree-git-plugin
+" emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,tpl,css,scss,vue EmmetInstall
+" /emmet
+
+"terminal bindings
+
+:tnoremap <Esc> <C-\><C-n>
